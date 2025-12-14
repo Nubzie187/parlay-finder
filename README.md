@@ -1,5 +1,20 @@
 # Parlay Finder
 
+## Status
+
+⚠️ **Experimental / Work in Progress** — APIs, models, and thresholds are subject to change.
+
+## Disclaimer
+
+This project does not scrape sportsbooks. Odds data is imported manually via CSV or licensed APIs. The project is for educational and analytical purposes only. No betting guarantees are made.
+
+## Data Sources
+
+- **NFL Statistics**: nflverse (GitHub releases) - Player weekly statistics are fetched from [nflverse/nflverse-data](https://github.com/nflverse/nflverse-data) GitHub releases
+- **Sportsbook Odds**: User-provided CSV or licensed APIs - Odds data must be imported manually via CSV format or through licensed API integrations
+
+---
+
 A Next.js App Router project with API routes and file-based caching.
 
 ## Project Structure

@@ -26,6 +26,8 @@ yarn-error.log*
 
 # local env files
 .env*.local
+# Exclude all .env files (including .env, .env.production, etc.) to protect API keys and secrets
+.env*
 
 # vercel
 .vercel
@@ -37,4 +39,18 @@ next-env.d.ts
 # cache
 /data/cache/*.json
 !/data/cache/.gitkeep
+# Exclude all cache files - these contain downloaded NFL data and should not be committed
+/data/cache/**
+
+# downloaded NFL CSVs
+# Exclude any downloaded CSV files from nflverse to avoid committing large data files
+# Allow sample files but exclude cached/downloaded CSVs
+data/cache/*.csv
+*.csv
+!data/gamelogs.sample.json
+
+# odds CSV files
+# Exclude any odds CSV files to protect user data and comply with sportsbook terms
+*odds*.csv
+*book*.csv
 
